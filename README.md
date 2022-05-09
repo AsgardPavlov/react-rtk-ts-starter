@@ -1,1 +1,5 @@
-# react, redux-toolkit, typescript wrapped in webpack starter
+# react v18 🚀
+# redux-toolkit 🛒
+# typescript
+# webpack v5 🌯
+# starter
