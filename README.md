@@ -1,1 +1,1 @@
-# react-rtk-ts-starter
+# react, redux-toolkit, typescript wrapped in webpack starter

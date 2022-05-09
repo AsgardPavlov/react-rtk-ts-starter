@@ -1,0 +1,132 @@
+// Main Elements normalization
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', serif;
+  color: #00063d;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f5ff;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch !important;
+  -webkit-text-size-adjust: none;
+  backface-visibility: hidden;
+}
+
+// No outline on focus controls
+button,
+input,
+textarea,
+a,
+li,
+div {
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+}
+
+// All blocks to border-box
+main,
+header,
+article,
+aside,
+figure,
+address,
+section,
+div,
+form,
+fieldset,
+input,
+select,
+button,
+a {
+  box-sizing: border-box;
+}
+main,
+article,
+aside,
+figure,
+address,
+div,
+form,
+input,
+button,
+fieldset,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// Href
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// Button
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+// Lists
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Forms
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: 1;
+}
+
+input:-internal-autofill-selected{
+  background-color: transparent !important;
+  color: inherit !important;
+  border-radius: inherit;
+}
