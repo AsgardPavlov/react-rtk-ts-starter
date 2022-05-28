@@ -1,9 +1,10 @@
 import * as React from 'react';
+import useBem from '../../hooks/useBem';
 
 export default function IndexPage() {
-    const blockName = 'IndexPage';
+    const {bemBlock} = useBem('IndexPage');
     return (
-        <div className={blockName}>
+        <div className={bemBlock()}>
             <h1>
                 {`${process.env.name}`}
             </h1>
