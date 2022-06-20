@@ -39,6 +39,7 @@
     "@reduxjs/toolkit": "^1.8.1",
     "@steroidsjs/eslint-config": "^2.0.0-beta.3",
     "@types/react-redux": "^7.1.24",
+    "dotenv-webpack": "^7.1.0",
     "eslint": "^7.2.0",
     "install": "^0.13.0",
     "npm": "^8.7.0",
