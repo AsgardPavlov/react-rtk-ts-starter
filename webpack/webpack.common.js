@@ -30,7 +30,9 @@ module.exports = {
             template: path.resolve(__dirname, '..', './src/index.html'),
         }),
         new CleanWebpackPlugin(),
-        new Dotenv(),
+        new Dotenv({
+            path: './.env',
+        }),
     ],
     module: {
         rules: [
