@@ -3,6 +3,9 @@ import useBem from '../../hooks/useBem';
 
 export default function IndexPage() {
     const {bemBlock} = useBem('IndexPage');
+
+    console.log(process.env.APP_BACKEND_URL, 'process.env.APP_BACKEND_URL');
+
     return (
         <div className={bemBlock()}>
             <h1>
