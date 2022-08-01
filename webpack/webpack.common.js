@@ -1,5 +1,6 @@
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
@@ -13,6 +14,18 @@ module.exports = {
         filename: 'bundle.js',
     },
     plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, '..', './public'),
+                    to: '',
+                    globOptions: {
+                        ignore: ['*.DS_Store'],
+                    },
+                    noErrorOnMissing: true,
+                },
+            ],
+        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '..', './src/index.html'),
         }),
