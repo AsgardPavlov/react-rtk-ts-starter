@@ -32,6 +32,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new Dotenv({
             path: './.env',
+            prefix: 'process.env.',
+            systemvars: true,
         }),
     ],
     module: {
